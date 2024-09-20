@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meta Scifor Technologies</title>
+    <style>
+
+        #main-body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+       
+        #main-heading {
+            color: green;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        /* Styling the div element using its ID */
+        #main-div {
+            background-color: blueviolet;
+            border: 1px white;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body id="main-body">
+    <h1 id="main-heading">This is a Heading</h1>
+    <div id="main-div">
+        Wlcome to Meta Scifor Technologies 
+    </div>
+</body>
+</html>
