@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Table</title>
+</head>
+<body>
+
+    <h2>Sample HTML Table</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>raju</td>
+            <td>mylapalli</td>
+            <td>22</td>
+            <td>india</td>
+        </tr>
+        <tr>
+            <td>pallavi</td>
+            <td>pillai</td>
+            <td>25</td>
+            <td>america</td>
+        </tr>
+        <tr>
+            <td>Amit</td>
+            <td>raana</td>
+            <td>35</td>
+            <td>India</td>
+        </tr>
+    </table>
+
+</body>
+</html>
