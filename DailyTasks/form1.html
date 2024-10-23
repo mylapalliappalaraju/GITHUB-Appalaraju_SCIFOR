@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+
+    <h2>Sample Form</h2>
+
+    <form action="/submit_form" method="POST">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname" holder="Enter your first name"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lastname" holder="Enter your last name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" holder="Enter your email"><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="chaina ">USA</option>
+            <option value="pakisthan">Canada</option>
+            <option value="India">India</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
