@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive Data Types</title>
+    
+</head>
+<body>
+    <h1>Primitive Data Types</h1>
+    <div id="output" class="output"></div>
+
+    <script>
+        
+        let myString = "Hello, World!";  
+        let myNumber = 42;                
+        let myUndefined;                  
+        let myNull = null;               
+
+        
+        let outputMessages = [
+            "Type of myString: " + typeof myString,
+            "Type of myNumber: " + typeof myNumber,
+            "Type of myUndefined: " + typeof myUndefined,
+            "Type of myNull: " + typeof myNull
+        ];
+
+        
+        outputMessages.forEach(message => console.log(message));
+
+        
+        document.getElementById('output').innerHTML = outputMessages.join('<br>');
+    </script>
+</body>
+</html>
