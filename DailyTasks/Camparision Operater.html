@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Comparison Operations</title>
+</head>
+<body>
+
+  <h2>JavaScript Comparison Operations</h2>
+
+  <div id="result"></div>
+
+  <script>
+    
+    let a = 10;
+    let b = 20;
+
+ 
+    let equalTo = (a == b);         
+    let notEqualTo = (a != b);      
+    let greaterThan = (a > b);      
+    let lessThan = (a < b);         
+    let greaterThanOrEqual = (a >= b);
+    let lessThanOrEqual = (a <= b);    
+
+   
+    document.getElementById("result").innerHTML = `
+      <p>a = ${a}, b = ${b}</p>
+      <p>a == b: ${equalTo}</p>
+      <p>a != b: ${notEqualTo}</p>
+      <p>a > b: ${greaterThan}</p>
+      <p>a < b: ${lessThan}</p>
+      <p>a >= b: ${greaterThanOrEqual}</p>
+      <p>a <= b: ${lessThanOrEqual}</p>
+    `;
+  </script>
+
+</body>
+</html>
