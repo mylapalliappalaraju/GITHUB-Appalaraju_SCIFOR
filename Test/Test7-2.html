@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenate Strings</title>
+    <script>
+        function concatenateStrings() {
+            
+            const string1 = document.getElementById("string1").value;
+            const string2 = document.getElementById("string2").value;
+            
+            
+            const result = string1 + string2;
+            
+            
+            document.getElementById("result").innerText = "Concatenated Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h2>String Concatenation</h2>
+    
+    
+    <label for="string1">First String:</label>
+    <input type="text" id="string1">
+    <br><br>
+    
+    <label for="string2">Second String:</label>
+    <input type="text" id="string2">
+    <br><br>
+    
+    
+    <button onclick="concatenateStrings()">Concatenate</button>
+    
+    
+    <p id="result"></p>
+</body>
+</html>
