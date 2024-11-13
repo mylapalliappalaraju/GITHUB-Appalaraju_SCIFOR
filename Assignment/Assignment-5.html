@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Classification Program</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        pre { background-color: lightseagreen; padding: 10px; border-radius: 5px; }
+        input { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Number Classification Program</h1>
+    <input type="text" id="numberInput" placeholder="Enter a number">
+    <button onclick="classifyNumber()">Classify Number</button>
+
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+
+    <script>
+        function classifyNumber() {
+            const input = document.getElementById('numberInput').value;
+            let output = '';
+            const number = parseFloat(input);
+
+            if (isNaN(number)) {
+                output = 'Invalid input. Please enter a valid number.';
+            } else if (number > 0) {
+                output = 'The number is positive.';
+            } else if (number < 0) {
+                output = 'The number is negative.';
+            } else if (number === 0) {
+                output = 'The number is zero.';
+            }
+
+            document.getElementById('output').innerText = output;
+        }
+    </script>
+</body>
+</html>

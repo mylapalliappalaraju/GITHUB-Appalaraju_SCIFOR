@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue Demonstration</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        pre { background-color: lightcoral; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Demonstration of Break and Continue Statements</h1>
+    <button onclick="Break()">Run Break Demo</button>
+    <button onclick="Continue()">Run Continue Demo</button>
+
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+
+    <script>
+        function Break() {
+            let output = 'Break Statement :\n';
+            for (let i = 1; i <= 10; i++) {
+                if (i === 5) {
+                    output += 'Loop breaks at i = ' + i + '\n';
+                    break;
+                }
+                output += 'i = ' + i + '\n';
+            }
+            document.getElementById('output').innerText = output;
+        }
+
+        function Continue() {
+            let output = 'Continue Statement :\n';
+            for (let i = 1; i <= 10; i++) {
+                if (i === 5) {
+                    output += 'Skipped i = ' + i + '\n';
+                    continue;
+                }
+                output += 'i = ' + i + '\n';
+            }
+            document.getElementById('output').innerText = output;
+        }
+    </script>
+</body>
+</html>
