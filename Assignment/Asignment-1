@@ -1,0 +1,61 @@
+1.what is HTML?
+Html is Known as Hyper text markup language that is used for the Structure of a Webpage and its content . The html written in <> Brackets there are two type of brackets in this <> open bracket for tag opening </> closed bracket for tag ending called paired tags and only <> open tag is called non- Paired Tags
+
+2.Are the HTML tags and elements the same thing?
+No, HTML tags and HTML elements are not the same thing
+
+HTML Tags: Tags are the building blocks of HTML and are used to define the start and end of an element. They are enclosed in angle brackets (<>). For example, <p> is an opening tag for a paragraph, and </p> is the closing tag. 
+
+HTML Elements: Elements are the actual objects or structures in the document created using tags. An element consists of an opening tag, its content (if any), and a closing tag (if applicable). For example, the entire structure <p>This is a paragraph.</p> is an HTML element. It includes the opening tag <p>, the content "This is a paragraph.", and the closing tag </p>.
+
+Tag = Just the part in < >
+Element = The tag(s) + the content inside.
+
+
+3.What are the tags and attributes in HTML?
+1. Tags:
+Tags are used to define elements in an HTML document. They specify how content should be structured or presented in a web browser.
+
+Opening Tag: The starting point of an element, enclosed in angle brackets (<>).
+Closing Tag: The ending point of an element, often the same as the opening tag but with a / before the tag name.
+<p> is the opening tag for a paragraph.
+</p> is the closing tag for the paragraph.
+ex-
+<div>  
+<img>
+<h1>
+
+2. Attributes:
+Attributes provide additional details about an HTML element and are always included in the opening tag. They usually consist of a name and a value pair, like name="value".
+<div id="header"></div>
+
+
+4.What are void elements in HTML?
+Void elements in HTML, also known as self-closing elements, are elements that do not have any content and therefore do not require a closing tag. They are used for inserting elements that do not need to contain other HTML elements or text, such as line breaks, images
+<img>
+<br>
+<hr>
+<input>
+No closing tag and No content in this void elements 
+
+5.What is the feature of HTML?
+HTML (Hyper Text Markup Language) is the standard language used to create and design web pages.
+1. Simple and Easy to Learn
+2. Platform Independent
+3. Supports Multimedia
+4. Forms and User Input
+5. Flexibility with CSS and JavaScript Integration
+6. Extensibility
+
+6.Diff between HTML vs XHTML?
+HTML: 
+1.lenient in terms of syntax
+2.Can be written with different versions ( HTML5), and the document type declaration (Doctype) varies based on the version.
+3.Tag and attribute names are not case-sensitive, so you can use either lowercase or uppercase, though lowercase is more common for readability.
+4.Certain tags (like <img>, <br>, and <input>) don’t need to be closed, making HTML less strict about closing tags.
+
+XHTML:
+1.Stricter syntax (must follow XML rules)
+2.Must follow a more specific XML-based DTD
+3.Tag and attribute names are case-sensitive and must be in lowercase
+4.All tags must be properly closed. Self-closing tags require a trailing slash (/)
