@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse and Sort Alphabet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4facfe;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #007cc6;
+    }
+    .output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #007cc6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Reverse and Sort Alphabets</h1>
+    <p>Type random alphabets and perform the operations below:</p>
+    <input type="text" id="alphabetInput" placeholder="Enter random alphabets here">
+    <div>
+      <button onclick="reverseAlphabets()">Step 1: Reverse</button>
+      <button onclick="sortAlphabets()">Step 2: Sort</button>
+    </div>
+    <div class="output">
+      <p id="outputText"></p>
+    </div>
+  </div>
+
+  <script>
+    // Step 1: Reverse the alphabets
+    function reverseAlphabets() {
+      const input = document.getElementById('alphabetInput').value;
+      if (input.trim() === '') {
+        alert('Please enter some alphabets!');
+        return;
+      }
+      const reversed = input.split('').reverse().join('');
+      document.getElementById('outputText').innerText = Reversed: ${reversed};
+    }
+
+    // Step 2: Sort the alphabets in ascending order (A-Z)
+    function sortAlphabets() {
+      const input = document.getElementById('alphabetInput').value;
+      if (input.trim() === '') {
+        alert('Please enter some alphabets!');
+        return;
+      }
+      const sorted = input.split('').sort().join('');
+      document.getElementById('outputText').innerText = Sorted: ${sorted};
+    }
+  </script>
+</body>
+</html>
